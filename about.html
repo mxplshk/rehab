@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О студии — AUTO.DETAILING</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor"></div>
+<div class="cursor-ring"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">AUTO<span>.</span>DETAILING</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="services.html">Услуги</a></li>
+    <li><a href="portfolio.html">Портфолио</a></li>
+    <li><a href="about.html">О студии</a></li>
+    <li><a href="reviews.html">Отзывы</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="#" class="nav-cta" data-popup>Записаться</a></li>
+  </ul>
+  <div class="burger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="popup-overlay">
+  <div class="popup">
+    <button class="popup-close">✕</button>
+    <h2>ЗАПИСАТЬСЯ</h2>
+    <p class="popup-sub">Оставьте заявку — мы перезвоним в течение 30 минут</p>
+    <form class="popup-form">
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="tel" placeholder="+7 (___) ___-__-__" required>
+      <input type="text" placeholder="Модель автомобиля">
+      <select>
+        <option value="" disabled selected>Выберите услугу</option>
+        <option>Полировка кузова</option>
+        <option>Нанокерамика</option>
+        <option>Оклейка плёнкой</option>
+        <option>Покраска</option>
+        <option>Детейлинг салона</option>
+        <option>Защита кузова</option>
+        <option>Бронирование стёкол</option>
+      </select>
+      <button type="submit" class="btn-submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+    </form>
+  </div>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-label">About Studio</div>
+  <h1 class="fade-up">О<br><em>СТУДИИ</em></h1>
+</div>
+
+<section class="about-story">
+  <div class="fade-up">
+    <span class="section-label">Наша история</span>
+    <h2>МЫ — ЭТО<br>ТОЧНОСТЬ</h2>
+    <p>AUTO.DETAILING основана в 2016 году командой мастеров с профессиональным образованием в области лакокрасочных покрытий и автомобильного дизайна.</p>
+    <p>Мы создали студию, где каждый автомобиль получает индивидуальный подход. Не конвейер — а ателье. Не сервис — а студия.</p>
+    <p>За 8 лет мы обработали более 2000 автомобилей премиум-класса: Ferrari, Porsche, Lamborghini, Bentley, McLaren. Наша репутация строится на результате, а не на обещаниях.</p>
+    <button class="btn" data-popup style="margin-top: 40px;">Записаться</button>
+  </div>
+  <div class="about-img fade-in">
+    <img src="https://images.unsplash.com/photo-1600705722908-bdb1353e43e1?w=800&q=80&auto=format" alt="Studio" loading="lazy">
+  </div>
+</section>
+
+<div class="stats-strip">
+  <div class="stat-item fade-up">
+    <div class="stat-num">8+</div>
+    <p>Лет на рынке</p>
+  </div>
+  <div class="stat-item fade-up">
+    <div class="stat-num">2000+</div>
+    <p>Автомобилей</p>
+  </div>
+  <div class="stat-item fade-up">
+    <div class="stat-num">5★</div>
+    <p>Рейтинг</p>
+  </div>
+  <div class="stat-item fade-up">
+    <div class="stat-num">3Y</div>
+    <p>Гарантия</p>
+  </div>
+</div>
+
+<section style="padding: 140px 60px; background: #070707;">
+  <span class="section-label">Наш подход</span>
+  <h2 class="fade-up" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(60px,8vw,120px);line-height:0.9;letter-spacing:2px;margin-bottom:80px;">ФИЛОСОФИЯ<br>СТУДИИ</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;">
+    <div class="why-item fade-up">
+      <div class="why-num">01</div>
+      <h3>ТОЧНОСТЬ</h3>
+      <p>Каждый миллиметр плёнки, каждый слой керамики — результат точного расчёта и многолетнего опыта.</p>
+    </div>
+    <div class="why-item fade-up">
+      <div class="why-num">02</div>
+      <h3>МАТЕРИАЛЫ</h3>
+      <p>Работаем только с сертифицированными материалами: Gyeon, Xpel, 3M, Avery Dennison, Llumar.</p>
+    </div>
+    <div class="why-item fade-up">
+      <div class="why-num">03</div>
+      <h3>ГАРАНТИЯ</h3>
+      <p>Даём письменную гарантию на все виды работ. Нанокерамика — до 3 лет, PPF — до 10 лет.</p>
+    </div>
+  </div>
+</section>
+
+<section class="team-section">
+  <span class="section-label">Наша команда</span>
+  <h2 class="fade-up">МАСТЕРА</h2>
+  <div class="team-grid">
+    <div class="team-card fade-up">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&auto=format" alt="Алексей Морозов" loading="lazy">
+      <div class="team-card-info">
+        <h3>Алексей Морозов</h3>
+        <span>Основатель, мастер полировки</span>
+      </div>
+    </div>
+    <div class="team-card fade-up">
+      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&q=80&auto=format" alt="Денис Власов" loading="lazy">
+      <div class="team-card-info">
+        <h3>Денис Власов</h3>
+        <span>Мастер оклейки плёнкой</span>
+      </div>
+    </div>
+    <div class="team-card fade-up">
+      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80&auto=format" alt="Игорь Ким" loading="lazy">
+      <div class="team-card-info">
+        <h3>Игорь Ким</h3>
+        <span>Мастер покраски</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 140px 60px; background: #070707;">
+  <span class="section-label">Наш бокс</span>
+  <h2 class="fade-up" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(60px,8vw,100px);line-height:0.9;letter-spacing:2px;margin-bottom:60px;">СТУДИЯ</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;">
+    <div style="height:320px;overflow:hidden;background:#1a1a1a;" class="fade-in">
+      <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=700&q=80&auto=format" alt="" style="width:100%;height:100%;object-fit:cover;filter:brightness(0.8);transition:transform 0.7s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    </div>
+    <div style="height:320px;overflow:hidden;background:#1a1a1a;" class="fade-in">
+      <img src="https://images.unsplash.com/photo-1503376334956-4c8f8e4a0fd6?w=700&q=80&auto=format" alt="" style="width:100%;height:100%;object-fit:cover;filter:brightness(0.8);transition:transform 0.7s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    </div>
+    <div style="height:320px;overflow:hidden;background:#1a1a1a;" class="fade-in">
+      <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=700&q=80&auto=format" alt="" style="width:100%;height:100%;object-fit:cover;filter:brightness(0.8);transition:transform 0.7s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <span class="section-label">Хотите к нам?</span>
+  <h2 class="fade-up">ЗАПИСАТЬСЯ<br>В СТУДИЮ</h2>
+  <p>Ждём ваш автомобиль</p>
+  <button class="btn" data-popup>Записаться</button>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h2>AUTO<span>.</span><br>DETAILING</h2>
+      <p>Премиальная студия покраски, оклейки и защиты автомобилей.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Навигация</h4>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="portfolio.html">Портфолио</a></li>
+        <li><a href="about.html">О студии</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Разделы</h4>
+      <ul>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Контакты</h4>
+      <ul>
+        <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+        <li><a href="mailto:info@autodetailing.ru">info@autodetailing.ru</a></li>
+        <li><a href="#">Москва, ул. Автомобильная, 1</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 AUTO.DETAILING — Все права защищены</p>
+    <p>Политика конфиденциальности</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

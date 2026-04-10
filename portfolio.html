@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио — AUTO.DETAILING</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor"></div>
+<div class="cursor-ring"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">AUTO<span>.</span>DETAILING</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="services.html">Услуги</a></li>
+    <li><a href="portfolio.html">Портфолио</a></li>
+    <li><a href="about.html">О студии</a></li>
+    <li><a href="reviews.html">Отзывы</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="#" class="nav-cta" data-popup>Записаться</a></li>
+  </ul>
+  <div class="burger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="popup-overlay">
+  <div class="popup">
+    <button class="popup-close">✕</button>
+    <h2>ЗАПИСАТЬСЯ</h2>
+    <p class="popup-sub">Оставьте заявку — мы перезвоним в течение 30 минут</p>
+    <form class="popup-form">
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="tel" placeholder="+7 (___) ___-__-__" required>
+      <input type="text" placeholder="Модель автомобиля">
+      <select>
+        <option value="" disabled selected>Выберите услугу</option>
+        <option>Полировка кузова</option>
+        <option>Нанокерамика</option>
+        <option>Оклейка плёнкой</option>
+        <option>Покраска</option>
+        <option>Детейлинг салона</option>
+        <option>Защита кузова</option>
+        <option>Бронирование стёкол</option>
+      </select>
+      <button type="submit" class="btn-submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+    </form>
+  </div>
+</div>
+
+<!-- Portfolio Modal -->
+<div class="portfolio-modal-overlay">
+  <div class="portfolio-modal">
+    <button class="modal-close-btn">✕</button>
+    <img src="" alt="">
+    <div class="portfolio-modal-info">
+      <h2></h2>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-label">Our Work</div>
+  <h1 class="fade-up">ПОРТ<br><em>ФОЛИО</em></h1>
+</div>
+
+<div class="marquee-strip">
+  <div class="marquee-inner">
+    <span>Ferrari</span><span>Porsche</span><span>Lamborghini</span><span>Mercedes</span><span>BMW</span><span>Bentley</span>
+    <span>Ferrari</span><span>Porsche</span><span>Lamborghini</span><span>Mercedes</span><span>BMW</span><span>Bentley</span>
+  </div>
+</div>
+
+<div class="portfolio-grid">
+  <div class="portfolio-item fade-in"
+    data-title="Ferrari 488 GTB"
+    data-desc="Нанокерамика + полировка 3 стадии. Полная защита лакокрасочного покрытия. Срок работ: 3 дня.">
+    <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=700&q=80&auto=format" alt="Ferrari 488">
+    <div class="portfolio-item-overlay">
+      <span>Нанокерамика</span>
+      <h3>Ferrari 488 GTB</h3>
+    </div>
+  </div>
+  <div class="portfolio-item fade-in"
+    data-title="Porsche 911 GT3"
+    data-desc="Оклейка матовой антигравийной плёнкой PPF. Полное бронирование кузова. Срок работ: 5 дней.">
+    <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=700&q=80&auto=format" alt="Porsche 911">
+    <div class="portfolio-item-overlay">
+      <span>Оклейка плёнкой PPF</span>
+      <h3>Porsche 911 GT3</h3>
+    </div>
+  </div>
+  <div class="portfolio-item fade-in"
+    data-title="Mercedes AMG G63"
+    data-desc="Смена цвета — перекрас в матовый чёрный + керамическое покрытие. Срок работ: 7 дней.">
+    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=700&q=80&auto=format" alt="Mercedes G63">
+    <div class="portfolio-item-overlay">
+      <span>Покраска + Керамика</span>
+      <h3>Mercedes AMG G63</h3>
+    </div>
+  </div>
+  <div class="portfolio-item fade-in"
+    data-title="Lamborghini Urus"
+    data-desc="Полный детейлинг кузова и салона. Химчистка кожи, полировка, нанокерамика. Срок: 4 дня.">
+    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=700&q=80&auto=format" alt="Lamborghini Urus">
+    <div class="portfolio-item-overlay">
+      <span>Полный детейлинг</span>
+      <h3>Lamborghini Urus</h3>
+    </div>
+  </div>
+  <div class="portfolio-item fade-in"
+    data-title="BMW M5 Competition"
+    data-desc="Полировка кузова 3 стадии + жидкое стекло. Устранение всех дефектов ЛКП. Срок: 2 дня.">
+    <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=700&q=80&auto=format" alt="BMW M5">
+    <div class="portfolio-item-overlay">
+      <span>Полировка</span>
+      <h3>BMW M5 Competition</h3>
+    </div>
+  </div>
+  <div class="portfolio-item fade-in"
+    data-title="Bentley Continental GT"
+    data-desc="Детейлинг салона премиум-класса. Реставрация кожи, химчистка, ароматизация. Срок: 3 дня.">
+    <img src="https://images.unsplash.com/photo-1503376334956-4c8f8e4a0fd6?w=700&q=80&auto=format" alt="Bentley">
+    <div class="portfolio-item-overlay">
+      <span>Детейлинг салона</span>
+      <h3>Bentley Continental GT</h3>
+    </div>
+  </div>
+  <div class="portfolio-item fade-in"
+    data-title="Aston Martin DB11"
+    data-desc="Бронирование лобового стекла + оклейка капота PPF. Защита от сколов и UV. Срок: 2 дня.">
+    <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=700&q=80&auto=format" alt="Aston Martin">
+    <div class="portfolio-item-overlay">
+      <span>Бронирование + PPF</span>
+      <h3>Aston Martin DB11</h3>
+    </div>
+  </div>
+  <div class="portfolio-item fade-in"
+    data-title="Porsche Cayenne Turbo"
+    data-desc="Смена цвета на хаки матовый. Полное бронирование виниловой плёнкой + керамика. Срок: 6 дней.">
+    <img src="https://images.unsplash.com/photo-1567103472667-6898f3a79cf2?w=700&q=80&auto=format" alt="Porsche Cayenne">
+    <div class="portfolio-item-overlay">
+      <span>Смена цвета</span>
+      <h3>Porsche Cayenne Turbo</h3>
+    </div>
+  </div>
+  <div class="portfolio-item fade-in"
+    data-title="McLaren 720S"
+    data-desc="Нанокерамика Gyeon Quartz + полировка. Кристально чистое ЛКП с защитой на 3 года. Срок: 4 дня.">
+    <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=700&q=80&auto=format" alt="McLaren">
+    <div class="portfolio-item-overlay">
+      <span>Нанокерамика Gyeon</span>
+      <h3>McLaren 720S</h3>
+    </div>
+  </div>
+</div>
+
+<section class="cta-section">
+  <span class="section-label">Ваш авто — следующий</span>
+  <h2 class="fade-up">ХОТИТЕ<br>ТАК ЖЕ?</h2>
+  <p>Запишитесь на бесплатную консультацию</p>
+  <button class="btn" data-popup>Записаться</button>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h2>AUTO<span>.</span><br>DETAILING</h2>
+      <p>Премиальная студия покраски, оклейки и защиты автомобилей.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Навигация</h4>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="portfolio.html">Портфолио</a></li>
+        <li><a href="about.html">О студии</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Разделы</h4>
+      <ul>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Контакты</h4>
+      <ul>
+        <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+        <li><a href="mailto:info@autodetailing.ru">info@autodetailing.ru</a></li>
+        <li><a href="#">Москва, ул. Автомобильная, 1</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 AUTO.DETAILING — Все права защищены</p>
+    <p>Политика конфиденциальности</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script>
+// Portfolio modal with data from data-attributes
+document.querySelectorAll('.portfolio-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const overlay = document.querySelector('.portfolio-modal-overlay');
+    const img = item.querySelector('img');
+    const title = item.dataset.title || item.querySelector('h3')?.textContent;
+    const desc = item.dataset.desc || item.querySelector('span')?.textContent;
+    overlay.querySelector('img').src = img.src;
+    overlay.querySelector('h2').textContent = title;
+    overlay.querySelector('p').textContent = desc;
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+});
+document.querySelector('.modal-close-btn').addEventListener('click', () => {
+  document.querySelector('.portfolio-modal-overlay').classList.remove('active');
+  document.body.style.overflow = '';
+});
+document.querySelector('.portfolio-modal-overlay').addEventListener('click', e => {
+  if (e.target === e.currentTarget) {
+    e.currentTarget.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
+</script>
+</body>
+</html>
