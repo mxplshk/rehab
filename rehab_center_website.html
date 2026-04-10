@@ -1,0 +1,262 @@
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font-sans);color:var(--color-text-primary);background:var(--color-background-primary)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 40px;border-bottom:0.5px solid var(--color-border-tertiary);background:var(--color-background-primary)}
+.logo{font-size:18px;font-weight:500;color:var(--color-text-primary)}
+.logo span{color:#1D9E75}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-size:14px;color:var(--color-text-secondary);text-decoration:none}
+.nav-links a:hover{color:var(--color-text-primary)}
+.nav-cta{background:#1D9E75;color:#fff;border:none;padding:8px 20px;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer}
+.hero{padding:80px 40px;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:#E1F5EE;color:#0F6E56;font-size:12px;font-weight:500;padding:4px 12px;border-radius:20px;margin-bottom:20px}
+.hero-badge-dot{width:6px;height:6px;border-radius:50%;background:#1D9E75}
+h1{font-size:42px;font-weight:500;line-height:1.2;margin-bottom:16px}
+h1 em{color:#1D9E75;font-style:normal}
+.hero p{font-size:16px;color:var(--color-text-secondary);line-height:1.7;margin-bottom:32px}
+.hero-btns{display:flex;gap:12px}
+.btn-primary{background:#1D9E75;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:15px;font-weight:500;cursor:pointer}
+.btn-secondary{background:transparent;color:var(--color-text-primary);border:0.5px solid var(--color-border-secondary);padding:12px 28px;border-radius:8px;font-size:15px;cursor:pointer}
+.hero-card{background:var(--color-background-secondary);border-radius:16px;padding:32px;border:0.5px solid var(--color-border-tertiary)}
+.hero-stat{display:flex;flex-direction:column;margin-bottom:24px}
+.hero-stat-num{font-size:36px;font-weight:500;color:#1D9E75}
+.hero-stat-label{font-size:13px;color:var(--color-text-secondary);margin-top:2px}
+.hero-stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.stat-mini{background:var(--color-background-primary);border-radius:10px;padding:16px;border:0.5px solid var(--color-border-tertiary)}
+.stat-mini-num{font-size:22px;font-weight:500}
+.stat-mini-label{font-size:12px;color:var(--color-text-secondary);margin-top:2px}
+.section{padding:72px 40px;max-width:1100px;margin:0 auto}
+.section-label{font-size:12px;font-weight:500;color:#1D9E75;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.section-title{font-size:32px;font-weight:500;margin-bottom:12px}
+.section-sub{font-size:16px;color:var(--color-text-secondary);max-width:560px;line-height:1.7}
+.programs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.prog-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;padding:28px}
+.prog-icon{width:44px;height:44px;border-radius:10px;background:#E1F5EE;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.prog-icon svg{width:22px;height:22px;stroke:#0F6E56;fill:none;stroke-width:2}
+.prog-card h3{font-size:17px;font-weight:500;margin-bottom:8px}
+.prog-card p{font-size:14px;color:var(--color-text-secondary);line-height:1.6}
+.prog-tag{display:inline-block;background:#E1F5EE;color:#085041;font-size:11px;padding:3px 10px;border-radius:20px;margin-top:14px;font-weight:500}
+.divider{border:none;border-top:0.5px solid var(--color-border-tertiary);margin:0}
+.why{background:var(--color-background-secondary);padding:72px 40px}
+.why-inner{max-width:1100px;margin:0 auto}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px}
+.why-item{text-align:center;padding:24px 16px}
+.why-num{font-size:36px;font-weight:500;color:#1D9E75;margin-bottom:6px}
+.why-label{font-size:14px;color:var(--color-text-secondary);line-height:1.5}
+.process{padding:72px 40px;max-width:1100px;margin:0 auto}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:48px;position:relative}
+.step{padding:24px;position:relative}
+.step::after{content:"";position:absolute;top:36px;right:0;width:1px;height:40px;background:var(--color-border-tertiary)}
+.step:last-child::after{display:none}
+.step-num{width:36px;height:36px;border-radius:50%;background:#1D9E75;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;margin-bottom:14px}
+.step h4{font-size:15px;font-weight:500;margin-bottom:6px}
+.step p{font-size:13px;color:var(--color-text-secondary);line-height:1.6}
+.testimonials{background:var(--color-background-secondary);padding:72px 40px}
+.test-inner{max-width:1100px;margin:0 auto}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.test-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;padding:24px}
+.test-stars{color:#EF9F27;font-size:14px;margin-bottom:12px}
+.test-text{font-size:14px;color:var(--color-text-secondary);line-height:1.7;margin-bottom:16px}
+.test-author{display:flex;align-items:center;gap:10px}
+.test-avatar{width:36px;height:36px;border-radius:50%;background:#E1F5EE;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;color:#0F6E56}
+.test-name{font-size:13px;font-weight:500}
+.test-meta{font-size:12px;color:var(--color-text-tertiary)}
+.cta-section{padding:80px 40px;text-align:center;max-width:700px;margin:0 auto}
+.cta-section h2{font-size:36px;font-weight:500;margin-bottom:14px}
+.cta-section p{font-size:16px;color:var(--color-text-secondary);margin-bottom:32px;line-height:1.7}
+.cta-form{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta-form input{padding:12px 18px;border:0.5px solid var(--color-border-secondary);border-radius:8px;font-size:15px;background:var(--color-background-primary);color:var(--color-text-primary);width:260px}
+footer{border-top:0.5px solid var(--color-border-tertiary);padding:40px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;max-width:1100px;margin:0 auto}
+.footer-logo{font-size:17px;font-weight:500;margin-bottom:10px}
+.footer-logo span{color:#1D9E75}
+.footer-desc{font-size:13px;color:var(--color-text-secondary);line-height:1.7}
+.footer-col h5{font-size:13px;font-weight:500;margin-bottom:12px}
+.footer-col a{display:block;font-size:13px;color:var(--color-text-secondary);text-decoration:none;margin-bottom:8px}
+.footer-bottom{border-top:0.5px solid var(--color-border-tertiary);padding:20px 40px;text-align:center;font-size:12px;color:var(--color-text-tertiary)}
+</style>
+
+<nav>
+  <div class="logo">Рассвет<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#">Программы</a></li>
+    <li><a href="#">О центре</a></li>
+    <li><a href="#">Как это работает</a></li>
+    <li><a href="#">Отзывы</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+  <button class="nav-cta">Получить консультацию</button>
+</nav>
+
+<div class="hero">
+  <div>
+    <div class="hero-badge"><div class="hero-badge-dot"></div>Лицензированный центр реабилитации</div>
+    <h1>Возвращаем <em>жизнь</em> тем, кто готов начать сначала</h1>
+    <p>Комплексная помощь при зависимостях, психологических кризисах и социальной адаптации. Индивидуальный подход, анонимность, реальные результаты.</p>
+    <div class="hero-btns">
+      <button class="btn-primary">Записаться на консультацию</button>
+      <button class="btn-secondary">Узнать подробнее</button>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="hero-stat">
+      <span class="hero-stat-num">89%</span>
+      <span class="hero-stat-label">пациентов сохраняют трезвость через год</span>
+    </div>
+    <div class="hero-stats-grid">
+      <div class="stat-mini"><div class="stat-mini-num">12+</div><div class="stat-mini-label">лет опыта</div></div>
+      <div class="stat-mini"><div class="stat-mini-num">3 200</div><div class="stat-mini-label">успешных случаев</div></div>
+      <div class="stat-mini"><div class="stat-mini-num">24/7</div><div class="stat-mini-label">поддержка</div></div>
+      <div class="stat-mini"><div class="stat-mini-num">48ч</div><div class="stat-mini-label">до начала лечения</div></div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="section">
+  <div class="section-label">Программы лечения</div>
+  <div class="section-title">Подбираем программу под вашу ситуацию</div>
+  <div class="section-sub">Каждый случай уникален. Мы не используем шаблонные подходы — только персональные планы восстановления.</div>
+  <div class="programs">
+    <div class="prog-card">
+      <div class="prog-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+      <h3>Стационарная реабилитация</h3>
+      <p>Полное погружение в лечебную среду. Круглосуточный медицинский контроль, групповая и индивидуальная терапия, структурированный распорядок дня.</p>
+      <span class="prog-tag">28–90 дней</span>
+    </div>
+    <div class="prog-card">
+      <div class="prog-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+      <h3>Дневной стационар</h3>
+      <p>Лечение без отрыва от жизни. Интенсивные сессии в дневное время с возможностью ночевать дома. Для тех, кто сохраняет социальные связи.</p>
+      <span class="prog-tag">5 дней в неделю</span>
+    </div>
+    <div class="prog-card">
+      <div class="prog-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <h3>Амбулаторная программа</h3>
+      <p>Поддерживающая терапия после основного лечения или для лёгких форм зависимости. 2–3 визита в неделю, интеграция в повседневную жизнь.</p>
+      <span class="prog-tag">Гибкий график</span>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="why">
+  <div class="why-inner">
+    <div class="section-label">Почему мы</div>
+    <div class="section-title">Доказательный подход, человеческое отношение</div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-num">15+</div>
+        <div class="why-label">специалистов в команде: наркологи, психологи, социальные работники</div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">100%</div>
+        <div class="why-label">анонимность и конфиденциальность всех данных</div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">3 мес</div>
+        <div class="why-label">бесплатное сопровождение после выписки</div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">24/7</div>
+        <div class="why-label">горячая линия для пациентов и их близких</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="process">
+  <div class="section-label">Как это работает</div>
+  <div class="section-title">4 шага к новой жизни</div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h4>Первый звонок</h4>
+      <p>Анонимная консультация. Специалист выслушает и предложит подходящую программу.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h4>Диагностика</h4>
+      <p>Полное медицинское и психологическое обследование. Разработка индивидуального плана.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h4>Лечение</h4>
+      <p>Детоксикация, терапия, работа с причинами зависимости в комфортных условиях.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h4>Возвращение</h4>
+      <p>Социальная адаптация, поддержка группы и специалистов после выписки.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="testimonials">
+  <div class="test-inner">
+    <div class="section-label">Отзывы</div>
+    <div class="section-title">Истории восстановления</div>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <div class="test-text">«Я провёл здесь два месяца. Это были лучшие два месяца за последние десять лет. Команда центра стала как семья — без осуждения, только поддержка и работа.»</div>
+        <div class="test-author"><div class="test-avatar">АК</div><div><div class="test-name">Андрей К.</div><div class="test-meta">В ремиссии 2 года</div></div></div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <div class="test-text">«Моего сына спасли здесь. Мы уже потеряли надежду, но специалисты центра нашли подход. Сейчас он работает, живёт нормальной жизнью.»</div>
+        <div class="test-author"><div class="test-avatar">НМ</div><div><div class="test-name">Наталья М.</div><div class="test-meta">Мать пациента</div></div></div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <div class="test-text">«Дневная программа позволила мне продолжать работать. Я не верил, что так можно. Три месяца — и я другой человек. Спасибо всей команде.»</div>
+        <div class="test-author"><div class="test-avatar">ДВ</div><div><div class="test-name">Дмитрий В.</div><div class="test-meta">В ремиссии 8 месяцев</div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <div class="section-label">Начать сейчас</div>
+  <h2>Сделайте первый шаг сегодня</h2>
+  <p>Оставьте номер телефона — мы перезвоним в течение 15 минут. Анонимно, без давления, без обязательств.</p>
+  <div class="cta-form">
+    <input type="tel" placeholder="+7 (___) ___-__-__">
+    <button class="btn-primary">Перезвоните мне</button>
+  </div>
+</div>
+
+<hr class="divider">
+
+<footer>
+  <div>
+    <div class="footer-logo">Рассвет<span>.</span></div>
+    <div class="footer-desc">Лицензированный реабилитационный центр. Помогаем с 2012 года. Все данные строго конфиденциальны.</div>
+  </div>
+  <div class="footer-col">
+    <h5>Программы</h5>
+    <a href="#">Стационар</a>
+    <a href="#">Дневной стационар</a>
+    <a href="#">Амбулаторно</a>
+    <a href="#">Онлайн поддержка</a>
+  </div>
+  <div class="footer-col">
+    <h5>Центр</h5>
+    <a href="#">О нас</a>
+    <a href="#">Команда</a>
+    <a href="#">Лицензии</a>
+    <a href="#">Отзывы</a>
+  </div>
+  <div class="footer-col">
+    <h5>Контакты</h5>
+    <a href="#">8 800 555-00-00</a>
+    <a href="#">info@rassvet.ru</a>
+    <a href="#">Адрес центра</a>
+    <a href="#">Как добраться</a>
+  </div>
+</footer>
+<div class="footer-bottom">© 2025 Реабилитационный центр «Рассвет». Все права защищены.</div>
